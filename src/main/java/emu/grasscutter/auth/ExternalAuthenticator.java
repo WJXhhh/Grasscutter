@@ -2,18 +2,18 @@ package emu.grasscutter.auth;
 
 import emu.grasscutter.auth.AuthenticationSystem.AuthenticationRequest;
 
-/**
+/*
  * Handles authentication via external routes.
  */
 public interface ExternalAuthenticator {
 
-    /**
+    /*
      * Called when an external login request is made.
      * @param request The authentication request.
      */
     void handleLogin(AuthenticationRequest request);
 
-    /**
+    /*
      * Called when an external account creation request is made.
      * @param request The authentication request.
      *                
@@ -22,7 +22,7 @@ public interface ExternalAuthenticator {
      */
     void handleAccountCreation(AuthenticationRequest request);
 
-    /**
+    /*
      * Called when an external password reset request is made.
      * @param request The authentication request.
      *                
